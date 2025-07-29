@@ -1,4 +1,4 @@
-from geometry.circle import calculate_area
+from geometry.circle import calculate_area, calculate_circ
 from math import pi
 import numpy as np
 
@@ -7,7 +7,9 @@ def test_area():
     area = calculate_area(r)
     assert area == pi, "The calculate is wrong"
 
-    
-    #r = -1
-    #area = calculate_area(r)
-    #assert area == np.nan
+
+def test_circ():
+    r = 1
+    circ = calculate_circ(r)
+    ans = 2*pi
+    assert circ == ans
