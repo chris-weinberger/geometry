@@ -1,3 +1,5 @@
+from math import pi
+
 def calculate_area(radius):
     """
     Calculate area of a circle.
@@ -12,7 +14,7 @@ def calculate_area(radius):
     area : float
         The area calculated.
     """
-    return pi*blob_radius ** 2
+    return pi*radius ** 2
 
 def calculate_circ(radius):
     """
